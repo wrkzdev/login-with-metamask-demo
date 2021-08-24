@@ -4,9 +4,11 @@ import { INTEGER, Sequelize, STRING } from 'sequelize';
 
 import { User } from './models';
 
+const db_path = process.env.REACT_APP_BACKEND_DB_PATH || os.tmpdir();
+
 const sequelize = new Sequelize('login-with-metamask-database', '', undefined, {
 	dialect: 'sqlite',
-	storage: path.join(os.tmpdir(), 'db.sqlite'),
+	storage: path.join(db_path, '/db.sqlite'),
 	logging: false,
 });
 
