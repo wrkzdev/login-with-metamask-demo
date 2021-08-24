@@ -40,7 +40,7 @@ export const App = (): JSX.Element => {
 			<header className="App-header">
 				<img src={logo} className="App-logo" alt="logo" />
 				<h1 className="App-title">
-					Welcome to Login with MetaMask Demo
+					Welcome to Login with MetaMask
 				</h1>
 			</header>
 			<div className="App-intro">
