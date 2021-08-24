@@ -105,7 +105,7 @@ export const Profile = ({ auth, onLoggedOut }: Props): JSX.Element => {
 				My publicAddress is <pre>{publicAddress}</pre>
 			</div>
 			<div>
-				<label htmlFor="username">Change username: </label>
+				<label htmlFor="username">Change Discord ID: </label>
 				<input name="username" onChange={handleChange} />
 				<button disabled={loading} onClick={handleSubmit}>
 					Submit
