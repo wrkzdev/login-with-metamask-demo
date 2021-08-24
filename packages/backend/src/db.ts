@@ -30,6 +30,21 @@ User.init(
 			type: STRING,
 			unique: false,
 		},
+		isVerified: {
+			allowNull: false,
+			type: INTEGER.UNSIGNED, // SQLITE will use INTEGER
+			defaultValue: (): number => 0,
+		},
+		verifiedDate: {
+			allowNull: false,
+			type: INTEGER.UNSIGNED, // SQLITE will use INTEGER
+			defaultValue: (): number => 0,
+		},
+		unverifiedDate: {
+			allowNull: false,
+			type: INTEGER.UNSIGNED, // SQLITE will use INTEGER
+			defaultValue: (): number => 0,
+		},
 	},
 	{
 		modelName: 'user',
