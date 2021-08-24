@@ -28,7 +28,7 @@ User.init(
 		},
 		username: {
 			type: STRING,
-			unique: true,
+			unique: false,
 		},
 	},
 	{
